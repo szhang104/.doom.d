@@ -1,22 +1,5 @@
 ;;; ~/.doom.d/config.el -*- lexical-binding: t; -*-
 
-
-
-;; according to the documentation of `doom-initialize` function, the load order
-;; of doom is as follow:
-;; ~/.emacs.d/init.el
-;; ~/.emacs.d/core/core.el
-;; ~/.doom.d/init.el
-;; Module init.el files
-;; `doom-before-init-modules-hook'
-;; Module config.el files
-;; ~/.doom.d/config.el
-;; `doom-init-modules-hook'
-;; `after-init-hook'
-;; `emacs-startup-hook'
-;; `doom-init-ui-hook'
-;; `window-setup-hook'
-
 ;; Place your private configuration here
 (load-theme 'doom-gruvbox t)
 (load! "lisp/asciinote-mode")
