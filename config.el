@@ -8,13 +8,13 @@
       (load-theme 'tango t)
     (load-theme 'doom-gruvbox t)))
 
-(load-theme 'doom-gruvbox t)
+;; (load-theme 'doom-gruvbox t)
 (load! "lisp/asciinote-mode")
 (add-to-list 'default-frame-alist '(height . 50))
 (add-to-list 'default-frame-alist '(width . 90))
 (global-visual-line-mode 1)
-(set-frame-font "Pragmata Pro Ligature-10.5")
-(setq line-spacing 5) ; number of pixels added below each line
+(set-frame-font "Pragmata Pro Ligature-11")
+(setq-default line-spacing 0.3) ; number of pixels added below each line
 
 ;; author has added auto-fill to text-mode-hook in favor of hard line breaks, but
 ;; I don't like it
