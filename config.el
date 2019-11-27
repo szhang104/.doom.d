@@ -110,3 +110,8 @@
       ([f8] #'start-or-report-session))
 (map! :map global-map
       ([S-f8] #'end-session))
+
+;; my own asciinote-map
+(map! :map asciinote-mode-map
+      (:localleader
+        "v" #'an-preview-browser))

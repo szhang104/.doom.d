@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: latexmath stem block for display equations
+# uuid:
+# key: lmb
+# condition: t
+# --
+[latexmath]
+++++
+$1
+++++
+
+$0
