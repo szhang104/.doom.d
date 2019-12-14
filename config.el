@@ -1,12 +1,20 @@
 ;;; ~/.doom.d/config.el -*- lexical-binding: t; -*-
 
 ;; Place your private configuration here
+(let* ((time-s (decode-time (current-time)))
+        (hour (nth 2 time-s))
+        (minute (nth 1 time-s)))
+  (if (and (< hour 18) (> hour 6))
+      (load-theme 'tango t)
+    (load-theme 'doom-gruvbox t)))
+
 (load-theme 'doom-gruvbox t)
 (load! "lisp/asciinote-mode")
 (add-to-list 'default-frame-alist '(height . 50))
 (add-to-list 'default-frame-alist '(width . 90))
 (global-visual-line-mode 1)
-(set-frame-font "Iosevka-10.5")
+(set-frame-font "Pragmata Pro Ligature-10.5")
+(setq line-spacing 5) ; number of pixels added below each line
 
 ;; author has added auto-fill to text-mode-hook in favor of hard line breaks, but
 ;; I don't like it
