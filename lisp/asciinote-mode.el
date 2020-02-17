@@ -1,0 +1,1 @@
+/home/sz/dev/asciinote-mode/asciinote-mode.el
